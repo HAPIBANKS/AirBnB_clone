@@ -7,7 +7,7 @@ class module review
 from models.base_model import BaseModel
 
 
-class Review:
+class Review(BaseModel):
     """
     Public class attributes:
     place_id: string - empty: it will be the Place.id
