@@ -46,10 +46,17 @@ class HBNBCommand(cmd.Cmd):
                 else:
                     try:
                         value = int(value)
+<<<<<<< HEAD
                     except IndexError:
                         try:
                             value = float(value)
                         except IndexError:
+=======
+                    except ValueError:
+                        try:
+                            value = float(value)
+                        except ValueError:
+>>>>>>> 9c73a61f08536aaacc21af3d1348163037c0d0a2
                             continue
                 new_dict[key] = value
         return new_dict
@@ -140,12 +147,20 @@ class HBNBCommand(cmd.Cmd):
                                 if args[2] in integers:
                                     try:
                                         args[3] = int(args[3])
+<<<<<<< HEAD
                                     except IndexError:
+=======
+                                    except ValueError:
+>>>>>>> 9c73a61f08536aaacc21af3d1348163037c0d0a2
                                         args[3] = 0
                                 elif args[2] in floats:
                                     try:
                                         args[3] = float(args[3])
+<<<<<<< HEAD
                                     except IndexError:
+=======
+                                    except ValueError:
+>>>>>>> 9c73a61f08536aaacc21af3d1348163037c0d0a2
                                         args[3] = 0.0
                             setattr(models.storage.all()[k], args[2], args[3])
                             models.storage.all()[k].save()
