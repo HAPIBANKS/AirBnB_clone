@@ -6,7 +6,7 @@ file and deserializes JSON file to instances
 
 
 import json
-from models.user import user
+from models.user import User
 from models.base_model import BaseModel
 
 
