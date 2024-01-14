@@ -34,7 +34,7 @@ class HBNBCommand(cmd.Cmd):
         return True
 
     def _key_value_parser(self, args):
-        """creates a dictionary from a list of strings"""
+        """create a dictionary from a list of strings"""
         new_dict = {}
         for arg in args:
             if "=" in arg:
